@@ -1,0 +1,144 @@
+@import 'bootstrap/scss/bootstrap-grid';
+
+@import "_shared/styles/color";
+@import "_shared/styles/spacing";
+
+.userMain {
+  padding: $spacing24 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: $spacing24;
+}
+
+.userCard {
+  @include media-breakpoint-down(md) {
+    box-shadow: none;
+    background-color: transparent;
+
+    padding: $spacing24 0;
+  }
+}
+
+.userCardBody {
+  @include media-breakpoint-down(md) {
+    padding: 0 $spacing16;
+  }
+}
+
+.userMainItemWrapper {
+  margin-top: $spacing8;
+
+  display: flex;
+  gap: $spacing24;
+}
+
+.userMainItem {
+  align-items: center;
+  display: flex;
+  gap: $spacing12;
+}
+
+.userMainIcon {
+  border-radius: $spacing22;
+
+  height: $spacing22;
+  width: $spacing22;
+
+  background-color: $grey;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.userAbout {
+  padding: $spacing24 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: $spacing24;
+
+  @include media-breakpoint-down(md) {
+    padding: $spacing24 $spacing16;
+  }
+}
+
+.userAboutInfo {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing8;
+}
+
+.userAboutFooter {
+  margin-top: $spacing24;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: $spacing24;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    gap: $spacing16;
+  }
+}
+
+.userAboutRating {
+  width: 100%;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ratingWrapper {
+  display: flex;
+  gap: $spacing10;
+}
+
+.ratingStar {
+  display: flex;
+  gap: $spacing4;
+}
+
+.reviewButton {
+  min-width: min(200px, 100vw);
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.meetupInfo {
+  margin-top: $spacing24;
+
+  display: flex;
+  flex-direction: column;
+  gap: $spacing24;
+}
+
+.meetupInfoItem {
+  display: flex;
+  gap: $spacing16;
+}
+
+.meetupInfoIcon {
+  border-radius: 10px;
+
+  background-color: $redLight;
+
+  height: $spacing67;
+  width: $spacing67;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.meetupInfoDescription {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing4;
+}

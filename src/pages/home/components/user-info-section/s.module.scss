@@ -1,0 +1,52 @@
+@import "_shared/styles/color";
+@import "_shared/styles/spacing";
+
+.mainInfo {
+  border-radius: 0 0 $spacing10 $spacing10;
+}
+
+.userInfo {
+  border-bottom: 0.5px solid $grey;
+
+  padding-bottom: $spacing16;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userInfoValue {
+  align-items: center;
+  display: flex;
+  gap: $spacing21;
+}
+
+.userInfoDescription {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing6;
+}
+
+.userInfoUsername {
+  align-items: center;
+  display: flex;
+  gap: $spacing10;
+}
+
+.userInfoOnline {
+  align-items: center;
+  display: flex;
+  gap: $spacing4;
+}
+
+.userInfoAvatar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $spacing11;
+}
+
+.infoAction {
+  padding-top: $spacing16;
+}

@@ -1,0 +1,41 @@
+@import 'bootstrap/scss/bootstrap-grid';
+
+@import "_shared/styles/color";
+@import "_shared/styles/size";
+
+.tabs {
+  & button {
+    border: none !important;
+    border-bottom: 1px solid transparent !important;
+
+    background-color: transparent;
+    color: $black !important;
+    font-weight: $fontWeightSemibold;
+
+    height: 100%;
+  }
+
+  & :global(button.active),
+  & button:hover {
+    border: none !important;
+    border-bottom: 1px solid $red !important;
+    border-color: $red !important;
+    border-radius: 0;
+
+    background-color: transparent !important;
+    color: $red !important;
+  }
+}
+
+.hideUnderline {
+  @include media-breakpoint-down(md) {
+    & :global(button.active),
+    & button:hover {
+      border: none !important;
+    }
+  }
+}
+
+.fullHeight {
+  height: 100%;
+}

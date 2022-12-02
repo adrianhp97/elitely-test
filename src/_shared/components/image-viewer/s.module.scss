@@ -1,0 +1,30 @@
+@import "_shared/styles/color";
+@import "_shared/styles/spacing";
+
+.imageViewer {
+  position: relative;
+
+  & :global(.carousel-indicators) {
+    bottom: -$spacing40;
+  }
+
+  & :global(.carousel-indicators button) {
+    border: 1px solid $grey;
+    border-radius: $spacing10;
+
+    background-color: $grey;
+
+    height: $spacing10;
+    width: $spacing10;
+  }
+
+  & :global(.carousel-indicators button.active) {
+    border-color: $red;
+
+    background-color: $red;
+  }
+}
+
+.indicator {
+  height: $spacing40;
+}

@@ -1,0 +1,19 @@
+@import "_shared/styles/color";
+@import "_shared/styles/size";
+@import "_shared/styles/spacing";
+
+.tag {
+  font-size: $fontSizeExtraSmall;
+
+  border: 1px solid $green;
+  border-radius: 100px;
+  
+  padding: $spacing4 $spacing8;
+}
+
+.tagGreen {
+  border-color: $green;
+
+  background: $greenLight;
+  color: $green;
+}

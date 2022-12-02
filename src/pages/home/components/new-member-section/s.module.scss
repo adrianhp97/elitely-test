@@ -1,0 +1,27 @@
+@import "_shared/styles/color";
+@import "_shared/styles/spacing";
+
+.item {
+  border-top: 0.5px solid $greyLight;
+
+  padding: $spacing20 0;
+
+  display: flex;
+  gap: $spacing10;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemInfoPersonality {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing1;
+}
+
+.itemInfoTime {
+
+}

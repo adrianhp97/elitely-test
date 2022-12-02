@@ -1,0 +1,20 @@
+@import 'bootstrap/scss/bootstrap-grid';
+
+@import "_shared/styles/color";
+@import "_shared/styles/size";
+
+.container {
+  background-color: $greyBackground;
+
+  height: 100%;
+  margin-top: calc($headerHeight + $topMenuHeight);
+  max-width: 944px;
+
+  @include media-breakpoint-down(md) {
+    margin-top: $headerHeight;
+    margin-bottom: $bottomMenuHeight;
+
+    padding: 0;
+    overflow-x: hidden;
+  }
+}

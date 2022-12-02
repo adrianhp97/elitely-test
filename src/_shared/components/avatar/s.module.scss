@@ -1,0 +1,29 @@
+@import "_shared/styles/color";
+@import "_shared/styles/spacing";
+
+.avatarSmall {
+  height: $spacing66;
+  width: $spacing66;
+}
+
+.avatarMedium {
+  height: $spacing80;
+  width: $spacing80;
+}
+
+@mixin avatar-border {
+  padding: $spacing3;
+  border: 1px solid $red;
+}
+
+.avatarBorderGreen {
+  @include avatar-border;
+
+  border-color: $green;
+}
+
+.avatarBorderYellow {
+  @include avatar-border;
+
+  border-color: $yellow;
+}

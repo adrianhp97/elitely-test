@@ -1,0 +1,31 @@
+@import 'bootstrap/scss/bootstrap-grid';
+
+@import "_shared/styles/color";
+@import "_shared/styles/size";
+@import "_shared/styles/spacing";
+
+.menuBar {
+  background-color: $white;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+
+  height: $topMenuHeight;
+  width: 100%;
+
+  position: fixed;
+  top: $headerHeight;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-down(md) {
+    height: $bottomMenuHeight;
+    bottom: 0;
+    top: unset;
+  }
+}
+
+.menuList {
+  width: min(100%, 656px);
+}

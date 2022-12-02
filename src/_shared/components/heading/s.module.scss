@@ -1,0 +1,9 @@
+@import "_shared/styles/color";
+@import "_shared/styles/size";
+
+.heading {
+  font-size: $heading7;
+  font-weight: $fontWeightBold;
+
+  margin: 0;
+}

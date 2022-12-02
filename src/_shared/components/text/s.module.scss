@@ -1,0 +1,66 @@
+@import "_shared/styles/color";
+@import "_shared/styles/size";
+
+.text {
+  margin: 0;
+}
+
+.textExtraSmall {
+  font-size: $fontSizeExtraSmall;
+}
+
+.textSmall {
+  font-size: $fontSizeSmall;
+}
+
+.textMedium {
+  font-size: $fontSizeMedium;
+}
+
+.textLarge {
+  font-size: $fontSizeLarge;
+}
+
+.textExtraLarge {
+  font-size: $fontSizeExtraLarge;
+}
+
+.textBold {
+  font-weight: $fontWeightBold;
+}
+
+.textNormal {
+  font-weight: $fontWeightNormal;
+}
+
+.textSemibold {
+  font-weight: $fontWeightSemibold;
+}
+
+.textGreen {
+  color: $green;
+}
+
+.textGrey {
+  color: $grey;
+}
+
+.textGreyDark {
+  color: $greyDark;
+}
+
+.textRed {
+  color: $red;
+}
+
+.textYellow {
+  color: $yellow;
+}
+
+.textWhite {
+  color: $white;
+}
+
+.textPreLine {
+  white-space: pre-line;
+}

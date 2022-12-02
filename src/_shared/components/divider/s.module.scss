@@ -1,0 +1,7 @@
+@import "_shared/styles/color";
+@import "_shared/styles/spacing";
+
+.divider {
+  height: $spacing1;
+  background-color: $greenLight;
+}
